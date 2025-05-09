@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>didima</title>
+    <title>Adem wahebi</title>
     <link href="didima.css" rel="stylesheet">
     <style>
         .video-modal {
@@ -28,9 +28,9 @@
             margin-bottom: 20px;
         }
         .close-btn {
-            background-color: #dc3545;
+            background-color: #35aadc;
             font-weight: bold;
-            padding: 15px 30px;
+            padding: 15px 60px;
             margin-top: 20px;
             text-align: center;
             color: #fff;
@@ -40,17 +40,18 @@
             transition: background-color 0.3s;
         }
         .close-btn:hover {
-            background-color: #300e11;
+            background-color: #3047abc4;
             transform: scale(1.05);
-            box-shadow: 0 8px 20px rgba(220, 53, 69, 0.5);
+            box-shadow: 0 8px 20px rgba(53, 212, 220, 0.5);
         }
     </style>
 </head>
 <body>
+    <div id="qrcode"></div>
     <div class="overlay"></div>
     <div class="container">
-        <img src="file:///C:/Users/hp/Downloads/Design%20sans%20titre%20(1).svg" alt="Logo" class="logo">
-        <h1>hi gtitis</h1>
+        <img src="LOGO.svg" alt="Logo" class="logo">
+        <h1>Bienvenue sur notre page de ressources vidéo</h1>
         <div class="button-container">
             <button onclick="openVideo('videos/video1.mp4')" class="btn">Vidéo 1</button>
             <button onclick="openVideo('videos/video2.mp4')" class="btn">Vidéo 2</button>
@@ -62,10 +63,10 @@
 
     <div class="video-modal" id="videoModal">
         <video controls id="videoPlayer"></video>
-        <button class="close-btn" onclick="closeVideo()">⬅️ Retour aux vidéos</button>
+        <button class="close-btn" onclick="closeVideo()">Retour</button>
     </div>
 
-    <script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js">
         function openVideo(src) {
             const modal = document.getElementById('videoModal');
             const videoPlayer = document.getElementById('videoPlayer');
@@ -81,6 +82,20 @@
             videoPlayer.currentTime = 0;
             modal.style.display = 'none';
         }
+        
+
+ var siteURL = "https://votresite.com"; 
+  
+  // Créez le QR code
+  new QRCode(document.getElementById("qrcode"), {
+    text: siteURL,
+    width: 128,
+    height: 128,
+    colorDark: "#000000",
+    colorLight: "#ffffff",
+    correctLevel: QRCode.CorrectLevel.H
+  });
+
     </script>
 </body>
 </html>
