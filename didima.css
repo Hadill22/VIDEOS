@@ -17,7 +17,7 @@ body {
     max-width: 600px;
     margin: 100px auto;
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.192);
+    background-color: rgba(201, 201, 205, 0.192);
     padding: 30px;
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(22, 36, 165, 0.797);
@@ -38,6 +38,9 @@ body {
 h1 {
     color: #04121f;
     margin-bottom: 30px;
+    
+   text-shadow: 2px 2px 4px rgb(21, 93, 181);
+
     animation: fadeInUp 1.2s ease-out forwards;
 }
 
@@ -53,15 +56,16 @@ h1 {
 
 
 .btn {
-    background-color: #62a571;
+    background-color: #628ba5;
     color: #fff;
     padding: 15px;
     width: 200PX;
-    border-radius: 8px;
+    border-radius: 29px;
      ;
     text-decoration: none;
     font-size: 18px;
     transition: background-color 0.3s, transform 0.2s;
+     box-shadow: 0 8px 20px rgba(40, 42, 167, 0.788);
 }
 
 .btn:hover {
