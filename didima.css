@@ -1,0 +1,91 @@
+/* Fond d'écran architecture */
+body {
+    background-image: url('https://i.pinimg.com/736x/2c/97/d5/2c97d5f562da2a92713154e3be680495.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+/* Conteneur principal */
+.container {
+    position: relative;
+    z-index: 1;
+    width: 90%;
+    max-width: 600px;
+    margin: 100px auto;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.192);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(22, 36, 165, 0.797);
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+/* Logo */
+.logo {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    box-shadow: 0 5px 15px rgb(44, 5, 201);
+    animation: fadeInUp 1.4s ease-out forwards;
+}
+
+/* Titre */
+h1 {
+    color: #04121f;
+    margin-bottom: 30px;
+    animation: fadeInUp 1.2s ease-out forwards;
+}
+
+/* Boutons */
+.button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    animation: fadeInUp 1.6s ease-out forwards;
+    align-items: center;   /* Centre les boutons horizontalement */
+
+}
+
+
+.btn {
+    background-color: #62a571;
+    color: #fff;
+    padding: 15px;
+    width: 200PX;
+    border-radius: 8px;
+     ;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn:hover {
+    background-color: #5a00b3;
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 91, 187, 0.5);
+}
+
+/* Animation de fade-in */
+@keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(30px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+/* Bouton Retour */
+.back-btn {
+    background-color: #28a745;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.back-btn:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(40, 167, 69, 0.5);
+}
+
+
